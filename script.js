@@ -72,7 +72,15 @@ document.querySelectorAll('.feature-card, .section-header, .about-text, .about-i
 
 // ===== Contact Form Handler =====
 // Form submissions are handled by FormSubmit.co
-// Emails are sent to dfchitengu@critical-path-global-logistics-zimbabwe.com
+const contactForm = document.getElementById('contactForm');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for your enquiry! We have received your message and will get back to you soon.');
+        this.submit();
+    });
+}
 
 // ===== Active Navigation Link Highlight =====
 const sections = document.querySelectorAll('section[id]');
