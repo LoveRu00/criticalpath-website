@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m http.server:*)",
+      "Bash(curl:*)",
+      "Bash(findstr:*)",
+      "Bash(powershell -Command \"(Invoke-WebRequest -Uri ''http://localhost:8000/styles.css'').Headers.''Content-Type''\")"
+    ]
+  }
+}
